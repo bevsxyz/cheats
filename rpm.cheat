@@ -1,0 +1,8 @@
+% rpm, linux
+
+$ installed_package: rpm -qa --- --multi --expand --column 1
+$ package: dnf list available --- --multi --expand --column 1
+
+# Find all the files that a package provides
+rpm -ql <installed_package>
+

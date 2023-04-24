@@ -1,0 +1,10 @@
+% dnf, linux
+$ installed_package: dnf list installed --- --multi --expand --column 1
+$ package: dnf list available --- --multi --expand --column 1
+
+# Install packages ignoring weak dependencies
+sudo dnf install --setopt=install_weak_deps=False <package>
+
+# Uninstall package
+sudo dnf remove <installed_package>
+

@@ -1,0 +1,6 @@
+% pdf-stapler, pdf
+
+# Encrypt pdf
+pdf-stapler -u <user-password> cat <file>.pdf <file>-encrypted.pdf;
+
+$ file: ls -1 *.pdf --- --map "cut -f1 -d'.'"
